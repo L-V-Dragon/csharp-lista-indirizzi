@@ -55,6 +55,39 @@ namespace csharp_lista_indirizzi
             return this.zip;
         }
 
+        public void SetName(string name)
+        {
+            this.name = name;
+        }
 
+        public void SetSurname(string surname)
+        {
+            this.surname = surname;
+        }
+
+        public void SetStreet(string street)
+        {
+            this.street = street;
+        }
+
+        public void SetCity(string city)
+        {
+            this.city = city;
+        }
+
+        public void SetProvince(string province)
+        {
+            this.province = province;
+        }
+
+        public void SetZip(string zip)
+        {
+            this.zip = zip;
+        }
+
+        public override string ToString()
+        {
+            return this.GetName() + "," + GetSurname() + "," + GetStreet() + "," + GetCity() + "," + GetProvince() + "," + GetZip();
+        }
     }
 }
